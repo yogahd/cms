@@ -31,6 +31,12 @@ Route::get('/articles/{id}', function ($id) {
 });
 
 /** Praktikum 2 */
+/** Bagian 1 */
 Route::get('/', [PageController::class, 'index']);
 Route::get('/', [PageController::class, 'about']);
 Route::get('/', [PageController::class, 'articles']);
+
+/** Bagian 2 */
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [AboutController::class, 'about']);
+Route::get('/', [ArticlesController::class, 'articles']);
