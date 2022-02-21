@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*Praktikum 1*/
+/** Praktikum 1 */
 Route::get('/', function () {
     echo " Selamat Datang ";
 });
@@ -29,3 +29,8 @@ Route::get('/about', function () {
 Route::get('/articles/{id}', function ($id) {
     echo " Ini adalah halaman Artikel dengan ID : {$id} ";
 });
+
+/** Praktikum 2 */
+Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'about']);
+Route::get('/', [PageController::class, 'articles']);
